@@ -1,24 +1,19 @@
 import './App.css'
-import Faq from './Faq'
-import Features from './Features'
-import Footer from './Footer'
-import Header from './Header'
-import Hero from './Hero'
-import News from './News'
-import Step from './Step'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { AuthProvider } from './context/AuthContext'
+import LandingPage from './pages/LandingPage'
+import SignUp from './components/Auth/SignUp'
 
 function App() {
-
   return (
-    <>
-      <Header />
-      <Hero />
-      <Features />
-      <News />
-      <Faq />
-      <Step />
-      <Footer />
-    </>
+    <Router>
+      <AuthProvider>
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/signup" element={<SignUp />} />
+        </Routes>
+      </AuthProvider>
+    </Router>
   )
 }
 
