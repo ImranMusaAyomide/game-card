@@ -1,9 +1,13 @@
 import React from 'react';
 import './Step.css';
+import ArrowMan from '../../assets/arrow-man.svg';
 
 const Step = () => {
   return (
     <section className="step-section">
+    <div>
+        <img src={ArrowMan} alt="" />
+    </div>
       <div className="step-container">
         <div className="step-content">
           <h2 className="step-title">
