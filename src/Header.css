@@ -1,0 +1,99 @@
+/* Header Container Styles */
+.ginter-header {
+  background-color: #020817; /* Deep navy from the image background */
+  border-bottom: 2px solid #0088cc; /* Thin blue accent line seen at the top */
+  padding: 15px 40px;
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+}
+
+.header-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo and Branding */
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-icon {
+  height: 32px;
+  width: auto;
+}
+
+.brand-name {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+/* Navigation Menu Links */
+.nav-menu {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-link {
+  color: #d1d5db; /* Light grey/white text */
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #ffffff;
+}
+
+/* Action Buttons */
+.header-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.btn-signin {
+  background: transparent;
+  border: 1px solid #374151; /* Dark border as seen in image */
+  color: #ffffff;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-signin:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.btn-play {
+  background-color: #f1b933; /* The golden yellow play button */
+  border: none;
+  color: #000000;
+  padding: 8px 30px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.1s;
+}
+
+.btn-play:hover {
+  background-color: #e5a81d;
+  transform: translateY(-1px);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 900px) {
+  .nav-menu {
+    display: none; 
+  }
+}

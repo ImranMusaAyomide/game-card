@@ -1,0 +1,123 @@
+.features-section {
+  background-color: #020817;
+  color: #ffffff;
+  padding: 100px 40px;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Intro Layout */
+.features-intro {
+  max-width: 1200px;
+  margin: 0 auto 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 60px;
+}
+
+.intro-text {
+  flex: 1;
+}
+
+.intro-text h2 {
+  font-size: 42px;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.intro-text .highlight {
+  color: #f1b933; /* Golden yellow from your branding */
+}
+
+.intro-text p {
+  color: #9ca3af;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  max-width: 500px;
+}
+
+.view-all-btn {
+  background: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  padding: 8px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+/* Icons Grid Styling */
+.icons-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  flex: 1;
+}
+
+.icon-card {
+  background: #1e293b;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  border: 2px solid #3b82f6; /* Blue glow border */
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.3);
+}
+
+.icon-card.wildcard {
+  grid-column: 4; /* Positions the ? icon slightly offset as in your image */
+  grid-row: 1 / span 2;
+  align-self: center;
+}
+
+.icon-card img {
+  width: 40px;
+  height: 40px;
+}
+
+/* Grouped Cards Styling */
+.key-features-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.grouped-cards-img {
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 50px;
+  transition: transform 0.3s ease;
+}
+
+.grouped-cards-img:hover {
+  transform: scale(1.02);
+}
+
+.feature-heading {
+  font-size: 52px;
+  color: #f1b933;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.feature-description {
+  max-width: 700px;
+  margin: 0 auto;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+/* Responsiveness */
+@media (max-width: 900px) {
+  .features-intro {
+    flex-direction: column;
+  }
+  .feature-heading {
+    font-size: 36px;
+  }
+}

@@ -1,0 +1,113 @@
+/* Hero Section Container */
+.hero-section {
+  background-color: #020817; /* Matching deep navy background */
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 40px;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.hero-container {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+/* Typography & Content Styling */
+.hero-content {
+  flex: 1;
+  max-width: 600px;
+}
+
+.hero-title {
+  font-family: 'Inter', sans-serif; /* Clean, bold sans-serif */
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 24px;
+  letter-spacing: -1px;
+}
+
+.hero-description {
+  font-size: 18px;
+  color: #9ca3af; /* Muted gray text */
+  line-height: 1.6;
+  margin-bottom: 40px;
+  max-width: 450px;
+}
+
+/* Button Styling */
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.btn-play-now {
+  background-color: #f1b933; /* Golden yellow */
+  color: #000000;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.btn-play-now:hover {
+  background-color: #e5a81d;
+  transform: translateY(-2px);
+}
+
+.btn-learn-now {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #374151; 
+  padding: 14px 32px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-learn-now:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+
+.hero-asset-container {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+
+
+@media (max-width: 1024px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-asset-container {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .hero-title {
+    font-size: 48px;
+  }
+}
