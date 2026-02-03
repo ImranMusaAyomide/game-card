@@ -1,0 +1,43 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="frostlingGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#87CEEB;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4A90E2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Body -->
+  <ellipse cx="100" cy="120" rx="35" ry="50" fill="url(#frostlingGrad)"/>
+  
+  <!-- Head -->
+  <circle cx="100" cy="60" r="28" fill="url(#frostlingGrad)"/>
+  
+  <!-- Frost crown -->
+  <path d="M 80 35 L 75 15 L 85 25 L 95 10 L 100 30 L 105 10 L 115 25 L 125 15 L 120 35" fill="#E0FFFF" stroke="#87CEEB" stroke-width="1"/>
+  
+  <!-- Eyes -->
+  <circle cx="90" cy="55" r="5" fill="#E0FFFF"/>
+  <circle cx="110" cy="55" r="5" fill="#E0FFFF"/>
+  <circle cx="90" cy="55" r="2" fill="#000"/>
+  <circle cx="110" cy="55" r="2" fill="#000"/>
+  
+  <!-- Nose (icicle) -->
+  <polygon points="100,65 98,72 102,72" fill="#E0FFFF"/>
+  
+  <!-- Smile -->
+  <path d="M 90 75 Q 100 82 110 75" stroke="#E0FFFF" stroke-width="2" fill="none" stroke-linecap="round"/>
+  
+  <!-- Ice shards on body -->
+  <polygon points="70,110 65,95 75,105" fill="#E0FFFF" opacity="0.7"/>
+  <polygon points="130,110 135,95 125,105" fill="#E0FFFF" opacity="0.7"/>
+  <polygon points="85,155 80,145 90,150" fill="#E0FFFF" opacity="0.7"/>
+  <polygon points="115,155 120,145 110,150" fill="#E0FFFF" opacity="0.7"/>
+  
+  <!-- Frost trails -->
+  <path d="M 65 120 L 50 140" stroke="#87CEEB" stroke-width="2" opacity="0.6" stroke-linecap="round"/>
+  <path d="M 135 120 L 150 140" stroke="#87CEEB" stroke-width="2" opacity="0.6" stroke-linecap="round"/>
+  
+  <!-- Glow effect -->
+  <circle cx="100" cy="120" r="55" fill="none" stroke="#87CEEB" stroke-width="2" opacity="0.4"/>
+  <circle cx="100" cy="120" r="60" fill="none" stroke="#4A90E2" stroke-width="1" opacity="0.2"/>
+</svg>

@@ -1,0 +1,39 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="blazewingGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF6347;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF4500;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Wings -->
+  <ellipse cx="70" cy="90" rx="25" ry="50" fill="#FF6347" opacity="0.8" transform="rotate(-30 70 90)"/>
+  <ellipse cx="130" cy="90" rx="25" ry="50" fill="#FF6347" opacity="0.8" transform="rotate(30 130 90)"/>
+  
+  <!-- Wing feathers -->
+  <path d="M 65 60 L 50 40 M 70 55 L 55 30 M 75 60 L 65 35" stroke="#FFD700" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 135 60 L 150 40 M 130 55 L 145 30 M 125 60 L 135 35" stroke="#FFD700" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Body -->
+  <ellipse cx="100" cy="120" rx="30" ry="45" fill="url(#blazewingGrad)"/>
+  
+  <!-- Head -->
+  <circle cx="100" cy="65" r="25" fill="#FF4500"/>
+  
+  <!-- Eyes glowing -->
+  <circle cx="90" cy="60" r="5" fill="#FFD700"/>
+  <circle cx="110" cy="60" r="5" fill="#FFD700"/>
+  <circle cx="90" cy="60" r="2" fill="#000"/>
+  <circle cx="110" cy="60" r="2" fill="#000"/>
+  
+  <!-- Beak -->
+  <polygon points="100,75 110,80 100,85" fill="#FFA500"/>
+  
+  <!-- Fire effect on body -->
+  <path d="M 85 140 Q 80 160 85 180" fill="none" stroke="#FFD700" stroke-width="3" opacity="0.6" stroke-linecap="round"/>
+  <path d="M 100 145 Q 95 165 100 180" fill="none" stroke="#FF8C00" stroke-width="3" opacity="0.6" stroke-linecap="round"/>
+  <path d="M 115 140 Q 120 160 115 180" fill="none" stroke="#FFD700" stroke-width="3" opacity="0.6" stroke-linecap="round"/>
+  
+  <!-- Glow -->
+  <circle cx="100" cy="120" r="50" fill="none" stroke="#FF6347" stroke-width="1" opacity="0.4"/>
+</svg>

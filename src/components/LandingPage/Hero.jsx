@@ -1,9 +1,21 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './Hero.css';
 import heroAsset from '../../assets/hero-asset.svg';
+import { useAuth } from '../../context/AuthContext';
 
 const Hero = () => {
+  const navigate = useNavigate();
+  const { user } = useAuth();
+
+  const handlePlay = () => {
+    if (user) {
+      navigate('/arena');
+    } else {
+      navigate('/signup');
+    }
+  };
+
   return (
     <section className="hero-section">
       <div className="hero-container">
@@ -18,7 +30,7 @@ const Hero = () => {
             and defeat your opponents in epic battles!
           </p>
           <div className="hero-buttons">
-            <button className="btn-play-now">Play Now</button>
+            <button className="btn-play-now" onClick={handlePlay}>Play Now</button>
             <Link to="/signup" className="btn-learn-now">Sign Up Now</Link>
           </div>
         </div>

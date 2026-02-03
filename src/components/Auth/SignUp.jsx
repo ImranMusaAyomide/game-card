@@ -67,9 +67,9 @@ const SignUp = () => {
       });
       setErrors({});
 
-      // Redirect to home after showing success message
+      // Redirect to arena after showing success message
       setTimeout(() => {
-        navigate('/');
+        navigate('/arena');
       }, 2000);
     } catch (error) {
       setErrors({ submit: 'Failed to create account. Please try again.' });
